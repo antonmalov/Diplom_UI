@@ -8,7 +8,8 @@ import static com.codeborne.selenide.Selenide.$;
 public class SearchResultsPage {
 
     SelenideElement resultSearch = $(".grid--removePaddingContainer"),
-    addedToCard = $(".card__controls .icon-cart");
+    addedToCard = $(".card__controls .icon-cart"),
+    addedToFavoritesList = $(".js-add-favorites");
 
 
     public SearchResultsPage resultSearchBooks(String resultText) {
@@ -18,6 +19,11 @@ public class SearchResultsPage {
 
     public SearchResultsPage addedItemToCard() {
         addedToCard.click();
+        return this;
+    }
+
+    public SearchResultsPage addedItemToFavoritesList() {
+        addedToFavoritesList.click();
         return this;
     }
 }

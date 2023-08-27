@@ -102,6 +102,7 @@ public class TestLib {
         $(byName("q")).setValue("нет орхидей для мисс блэндиш").pressEnter();
         $(".js-add-favorites").click();
         $(".js-set-add-favorites").click();
+        $(".js-favorites-list").shouldHave(text("Нет орхидей для мисс Блэндиш"));
     }
 
 }

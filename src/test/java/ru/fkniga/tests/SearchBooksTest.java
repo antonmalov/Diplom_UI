@@ -13,8 +13,7 @@ public class SearchBooksTest extends TestBase {
     public void searchBookByAuthor() {
 
         step("Введение поискового запроса", () -> {
-            mainPage
-                    .openMainPage()
+            mainPage.openMainPage()
                     .inputSearchText("Санаев");
         });
 

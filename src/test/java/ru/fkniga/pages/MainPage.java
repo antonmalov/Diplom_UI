@@ -38,6 +38,11 @@ public class MainPage {
         return this;
     }
 
+    public MainPage goToFavoritesList() {
+        btnHeart.click();
+        return this;
+    }
+
 
 
 

@@ -9,10 +9,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import ru.fkniga.helpers.Attach;
-import ru.fkniga.pages.CardShop;
-import ru.fkniga.pages.LoginPage;
-import ru.fkniga.pages.MainPage;
-import ru.fkniga.pages.SearchResultsPage;
+import ru.fkniga.pages.*;
 
 import java.util.Map;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
@@ -24,7 +21,8 @@ public class TestBase {
     MainPage mainPage = new MainPage();
     LoginPage loginPage = new LoginPage();
     SearchResultsPage resultsPage = new SearchResultsPage();
-    CardShop cardShop = new CardShop();
+    CardShopPage cardShop = new CardShopPage();
+    FavoritesListPage favoritesList = new FavoritesListPage();
     Faker faker = new Faker();
 
     @BeforeAll

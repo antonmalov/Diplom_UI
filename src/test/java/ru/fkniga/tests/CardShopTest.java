@@ -12,16 +12,14 @@ public class CardShopTest extends TestBase {
     public void addedTitleCardShop() {
 
         step("Добавление товара в корзину", () -> {
-            mainPage
-                    .openMainPage()
+            mainPage.openMainPage()
                     .inputSearchText("нет орхидей для мисс блэндиш");
             resultsPage.addedItemToCard();
         });
 
         step("Проверка наличия товара в корзине", () -> {
             mainPage.goToCard();
-            cardShop
-                    .checkNameTitle("Нет орхидей для мисс Блэндиш")
+            cardShop.checkNameTitle("Нет орхидей для мисс Блэндиш")
                     .checkCount("В корзине 1 товар");
         });
     }

@@ -18,8 +18,7 @@ public class LoginTest extends TestBase{
         });
 
         step("Проверка заголовка и почты в личном кабинете", () -> {
-            loginPage
-                    .checkTitle()
+            loginPage.checkTitle()
                     .checkEmail();
         });
     }
@@ -39,8 +38,7 @@ public class LoginTest extends TestBase{
         });
 
         step("Проверка наличия кнопки Войти", () -> {
-            loginPage
-                    .checkTextEnter();
+            loginPage.checkTextEnter();
         });
     }
 
