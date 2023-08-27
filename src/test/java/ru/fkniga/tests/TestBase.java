@@ -32,7 +32,7 @@ public class TestBase {
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("browserVersion", "100.0");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
-        Configuration.holdBrowserOpen = true;
+        //Configuration.holdBrowserOpen = true;
 
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
