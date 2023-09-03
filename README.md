@@ -32,10 +32,8 @@ ____
 <a id="jenkins"></a>
 </a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/MalovDiplomUI/)</a>
 ____
-<p align="center">  
-<a href="https://jenkins.autotests.cloud/job/20-evgenii_k99-homework15/"><img src="images/screenshots/jenkins.png" alt="Jenkins" width="950"/></a>  
-</p>
 
+<img src="images/screens/jenkins.png" alt="Jenkins" width="950"/>
 
 ### **Параметры сборки в Jenkins:**
 
@@ -48,23 +46,33 @@ ____
 ___
 ***Локальный запуск:***
 ```bash  
-gradle clean test -Denv=local
+gradle clean test 
 ```
 
-***Удалённый запуск через Jenkins:***
-```bash  
-clean ${TESTS_TAG}
-"-Denv=remote"
-"-Dbrowser=${BROWSER}"
-"-DbrowserSize=${BROWSER_SIZE}"
+#### Удаленный запуск тестов с параметрами:
+
+```bash
+gradle clean test
+-DbaseUrl=${BASE_URL}
+-DbrowserVersion=${BROWSER_VERSION}
+-DbrowserSize=${BROWSER_SIZE}
+-DselenoidUrl=${SELENOID_URL}
+
 ```
+
+> `${BROWSER}` - наименование браузера (_по умолчанию - <code>chrome</code>_).
+>
+> `${BROWSER_VERSION}` - версия браузера (_по умолчанию - <code>100.0</code>_).
+>
+> `${BROWSER_SIZE}` - размер окна браузера (_по умолчанию - <code>1920x1080</code>_).
+>
+> `${REMOTE_URL}` - адрес удаленного сервера, на котором будут запускаться тесты.
 ___
 <a id="allure"></a>
-## <img alt="Allure" height="25" src="images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [отчет](https://jenkins.autotests.cloud/job/20-evgenii_k99-homework15/allure/)</a>
+## <img alt="Allure" height="25" src="images/logo/Allure_Report.svg" width="25"/></a> <a name="Allure"></a>Allure [отчет](https://jenkins.autotests.cloud/job/MalovDiplomUI/4/allure/)</a>
 ___
 
-### *Основная страница отчёта*
 
 <p align="center">  
-<img title="Allure Overview Dashboard" src="images/screenshots/AllureReport.png" width="850">  
+<img title="Allure Overview Dashboard" src="images/screens/Report.png" width="850">  
 </p>  
