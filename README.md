@@ -30,7 +30,7 @@ ____
 
 ____
 <a id="jenkins"></a>
-## <img alt="Jenkins" height="25" src="[images/logo/Jenkins.svg](https://p1c2u.gallerycdn.vsassets.io/extensions/p1c2u/jenkins/0.1.0/1551451475146/Microsoft.VisualStudio.Services.Icons.Default)" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/MalovDiplomUI/)</a>
+## <img alt="Jenkins" height="25" src="https://p1c2u.gallerycdn.vsassets.io/extensions/p1c2u/jenkins/0.1.0/1551451475146/Microsoft.VisualStudio.Services.Icons.Default" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/MalovDiplomUI/)</a>
 ____
 <p align="center">  
 <a href="https://jenkins.autotests.cloud/job/20-evgenii_k99-homework15/"><img src="images/screenshots/jenkins.png" alt="Jenkins" width="950"/></a>  
