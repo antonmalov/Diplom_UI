@@ -5,7 +5,7 @@
 > fkniga.ru - интернет магазин по продаже книг, канцелярии и подарков
 
 
-### Реализованные проверки:
+## Реализованные проверки:
 * Успешная авторизация
 * Различные вариант неуспешной авторизации
 * Выход из аккаунта
@@ -14,7 +14,7 @@
 * Добавление товара в избранное 
 
 ____
-### Технологии и инструменты:
+## Технологии и инструменты:
 <p align="center">
 <img src="images/logo/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA"/>
 <img src="images/logo/Java.svg" width="50" height="50"  alt="Java"/>
@@ -30,12 +30,12 @@ ____
 
 ____
 <a id="jenkins"></a>
-</a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/MalovDiplomUI/)</a>
+## </a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/MalovDiplomUI/)</a>
 ____
 
 <img src="images/screens/jenkins.png" alt="Jenkins" width="950"/>
 
-### **Параметры сборки в Jenkins:**
+## **Параметры сборки в Jenkins:**
 
 - *BROWSER (браузер, по умолчанию chrome)*
 - *BROWSER_SIZE (размер окна браузера, по умолчанию 1920x1080)*
@@ -44,7 +44,7 @@ ____
 <a id="console"></a>
 ## Команды для запуска из терминала
 ___
-***Локальный запуск:***
+#### Локальный запуск:
 ```bash  
 gradle clean test 
 ```
