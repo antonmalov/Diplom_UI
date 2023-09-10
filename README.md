@@ -28,12 +28,6 @@ ____
 </p>
 
 
-____
-<a id="jenkins"></a>
-## </a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/MalovDiplomUI/)</a>
-____
-
-<img src="images/screens/jenkins.png" alt="Jenkins" width="950"/>
 
 ## **Параметры сборки в Jenkins:**
 
