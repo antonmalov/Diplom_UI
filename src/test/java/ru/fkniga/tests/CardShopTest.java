@@ -2,10 +2,16 @@ package ru.fkniga.tests;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import ru.fkniga.pages.CardShopPage;
+import ru.fkniga.pages.MainPage;
+import ru.fkniga.pages.SearchResultsPage;
 
 import static io.qameta.allure.Allure.step;
 
 public class CardShopTest extends TestBase {
+    MainPage mainPage = new MainPage();
+    SearchResultsPage resultsPage = new SearchResultsPage();
+    CardShopPage cardShop = new CardShopPage();
 
     @Test
     @DisplayName("Добавление товара в корзину")

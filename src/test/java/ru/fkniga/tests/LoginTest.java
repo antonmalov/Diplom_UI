@@ -2,10 +2,14 @@ package ru.fkniga.tests;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import ru.fkniga.pages.LoginPage;
+import ru.fkniga.pages.MainPage;
 
 import static io.qameta.allure.Allure.step;
 
-public class LoginTest extends TestBase{
+public class LoginTest extends TestBase {
+    MainPage mainPage = new MainPage();
+    LoginPage loginPage = new LoginPage();
 
     @Test
     @DisplayName("Успешная авторизация")
@@ -18,8 +22,8 @@ public class LoginTest extends TestBase{
         });
 
         step("Проверка заголовка и почты в личном кабинете", () -> {
-            loginPage.checkTitle()
-                    .checkEmail();
+            loginPage.checkTitle("Личный кабинет")
+                    .checkEmail("maloanto@yandex.ru");
         });
     }
 
@@ -38,7 +42,7 @@ public class LoginTest extends TestBase{
         });
 
         step("Проверка наличия кнопки Войти", () -> {
-            loginPage.checkTextEnter();
+            loginPage.checkTextEnter("Войти");
         });
     }
 

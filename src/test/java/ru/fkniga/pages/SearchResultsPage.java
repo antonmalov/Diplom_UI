@@ -7,23 +7,20 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class SearchResultsPage {
 
-    SelenideElement resultSearch = $(".grid--removePaddingContainer"),
-    addedToCard = $(".card__controls .icon-cart"),
-    addedToFavoritesList = $(".js-add-favorites");
+    private final SelenideElement resultSearch = $(".grid--removePaddingContainer"),
+            addedToCard = $(".card__controls .icon-cart"),
+            addedToFavoritesList = $(".js-add-favorites");
 
 
-    public SearchResultsPage resultSearchBooks(String resultText) {
+    public void resultSearchBooks(String resultText) {
         resultSearch.shouldHave(text(resultText));
-        return this;
     }
 
-    public SearchResultsPage addedItemToCard() {
+    public void addedItemToCard() {
         addedToCard.click();
-        return this;
     }
 
-    public SearchResultsPage addedItemToFavoritesList() {
+    public void addedItemToFavoritesList() {
         addedToFavoritesList.click();
-        return this;
     }
 }

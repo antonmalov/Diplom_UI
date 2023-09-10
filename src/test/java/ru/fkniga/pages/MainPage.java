@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class MainPage {
 
-    private static final String MAIN_PAGE_URL = "https://fkniga.ru/";
+    private final String MAIN_PAGE_URL = "https://fkniga.ru/";
     private final SelenideElement logo = $(".logo"),
             btnEnter = $(byText("Войти")),
             inputSearch = $(byName("q")),
@@ -23,28 +23,19 @@ public class MainPage {
         return this;
     }
 
-    public MainPage pressEnter() {
+    public void pressEnter() {
         btnEnter.click();
-        return this;
     }
 
-    public MainPage inputSearchText(String textForSearch) {
+    public void inputSearchText(String textForSearch) {
         inputSearch.setValue(textForSearch).pressEnter();
-        return this;
     }
 
-    public MainPage goToCard() {
+    public void goToCard() {
         btnCard.click();
-        return this;
     }
 
-    public MainPage goToFavoritesList() {
+    public void goToFavoritesList() {
         btnHeart.click();
-        return this;
     }
-
-
-
-
-
 }
